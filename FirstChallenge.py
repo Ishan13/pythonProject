@@ -5,4 +5,7 @@ statement2 = "My name is Wonder Woman"
 f_stat1 = f"{statement1.center(40)}"
 f_stat2 = f"{statement2.center(40)}"
 
-print(f_stat1 + "===>" + f_stat2)
+print(f_stat1 + " ===> " + f_stat2)
+
+# Using python slicing
+print(f'{statement1:^40} ===> {statement2:^40}')
