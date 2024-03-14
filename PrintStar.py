@@ -3,8 +3,8 @@
 #     for j in range(i + 1):
 #         print("*", end=" ")
 #     print()  # Move to the next line after each row
-
-
+#
+#
 # # Outer loop to iterate through each row
 # for i in range(5):
 #     # Print spaces for alignment
@@ -17,7 +17,7 @@
 #
 #     # Move to the next line after each row
 #     print()
-
+#
 # rows = 5
 # k = 2 * rows - 2
 # for i in range(0, rows):
@@ -32,8 +32,8 @@
 #     print("")
 
 
-for i in range(1, 10):
-    if i % 3 == 0:
-        print(i)
-    else:
-        print(i, end=" ")
+# for i in range(1, 10):
+#     if i % 3 == 0:
+#         print(i)
+#     else:
+#         print(i, end=" ")

@@ -122,9 +122,17 @@
 #
 #     print("=============================")
 
-for i in range(1, 10):
-    if i % 3 == 0:
-        print(i)
-    else:
-        print(i, end=" ")
+# i = 1
+# while True:
+# v = input("Enter the secret code: ")
+# if v == "secret" and i < 3:
+# print("Password matched. Access granted.")
+# break
+# elif i == 3:
+# print("Take a break for 30 minutes and then try again!")
+# break
+# else:
+# i = i + 1
+# print("That was not the correct code. I cant grant you the access!")
 
+# if __name__ ==__main()__
