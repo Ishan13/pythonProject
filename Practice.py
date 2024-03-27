@@ -137,4 +137,95 @@
 
 # if __name__ ==__main()__
 
+# def ten_print(n):
+#     if n==11:
+#         return
+#     else:
+#         print(n)
+#         ten_print(n +1)
+#
+# ten_print(1)
+
+# def fibonacci(n):
+#     if n <= 1:
+#         return n
+#     else:
+#         return fibonacci(n - 1) + fibonacci(n - 2)
+#
+# n = 10
+# fib_series = [fibonacci(i) for i in range(n)]
+# print(fib_series)
+
+# def fibonacci(n, a=0, b=1):
+#     if a <= n:
+#         return [a] + fibonacci(n, b, a+b)
+#     else:
+#         return []
+#
+# print(fibonacci(34))
+
+# a = [2, 0, -5, "Hello", 9.99]
+# i = 0
+# while i < 5:
+#     print(a[i])
+#     i += 1
+
+# def printlist(l):
+#     i = 0
+#     while i < len(l):
+#         print(l[i])
+#         i += 1
+#
+#
+# a = [2, 0, -5, "Hello", 9.99]  # two blank lines expected after ending the block of function.
+# printlist(a)
+
+# def runningsum(nums):
+#     for i in range(1, len(nums)):
+#         nums[i] += nums[i - 1]
+#     return nums
+#
+#
+# input_list = [1, 2, 3, 4, 5]
+# result = runningsum(input_list)
+# print(result)
+
+# def addlistwithwhile(l):
+#     rs = 0
+#     i = 0
+#     runningsumlist = []
+#
+#     while i < len(l):
+#         rs = rs + l[i]
+#         runningsumlist.append(rs)
+#         i = i+1
+#
+#     return runningsumlist
+#
+#
+# ans = addlistwithwhile([1, 2, 3, 4, 5])
+# print(ans)
+
+# my_list3 = ["mouse", [9, 3, 6], ['a']]
+# print(my_list3[0][3])
+# print(my_list3[1][2])
+
+def odd_even(main_list):
+    odd_list = []
+    even_list = []
+
+    for num in main_list:
+        if num % 2 == 0:
+            even_list.append(num)
+        else:
+            odd_list.append(num)
+
+    return odd_list, even_list
+
+
+main_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_list, even_list = odd_even(main_list)
+print("Odd numbers:", odd_list)
+print("Even numbers:", even_list)
+
 
