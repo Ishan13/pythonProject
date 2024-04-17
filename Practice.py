@@ -210,22 +210,192 @@
 # print(my_list3[0][3])
 # print(my_list3[1][2])
 
-def odd_even(main_list):
-    odd_list = []
-    even_list = []
+# def odd_even(main_list):
+#     odd_list = []
+#     even_list = []
+#
+#     for num in main_list:
+#         if num % 2 == 0:
+#             even_list.append(num)
+#         else:
+#             odd_list.append(num)
+#
+#     return odd_list, even_list
+#
+#
+# main_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# odd_list, even_list = odd_even(main_list)
+# print("Odd numbers:", odd_list)
+# print("Even numbers:", even_list)
 
-    for num in main_list:
-        if num % 2 == 0:
-            even_list.append(num)
-        else:
-            odd_list.append(num)
+# def odd_even(main_list):
+#     odd_list = []
+#     even_list = []
+#
+#     i = 0
+#     while i < len(main_list):
+#         num = main_list[i]
+#         if num % 2 == 0:
+#             even_list += [num]
+#         else:
+#             odd_list += [num]
+#         i += 1
+#
+#     return odd_list, even_list
+#
+# main_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# odd_list, even_list = odd_even(main_list)
+# print("Odd numbers:", odd_list)
+# print("Even numbers:", even_list)
 
-    return odd_list, even_list
+# def number_to_word(number):
+#     # Define lists for words representing numbers
+#     ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+#     teens = ["", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+#     tens = ["", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+#     thousands = ["", "thousand", "million"]
+#
+#     # Function to convert three-digit number to word
+#     def three_digits(num):
+#         if num < 100:
+#             return two_digits(num)
+#         else:
+#             if num % 100 == 0:
+#                 return ones[num // 100] + " hundred"
+#             else:
+#                 return ones[num // 100] + " hundred and " + two_digits(num % 100)
+#
+#     # Function to convert two-digit number to word
+#     def two_digits(num):
+#         if num < 10:
+#             return ones[num]
+#         elif 10 <= num < 20:
+#             return teens[num - 10]
+#         else:
+#             return tens[num // 10] + ("-" + ones[num % 10] if num % 10 != 0 else "")
+#
+#     # Function to convert any number to word
+#     def number_to_words(num):
+#         if num == 0:
+#             return "zero"
+#         elif num < 10:
+#             return ones[num]
+#         elif num < 100:
+#             return two_digits(num)
+#         else:
+#             words = ""
+#             for i in range(3):
+#                 if num % 1000 != 0:
+#                     words = three_digits(num % 1000) + " " + thousands[i] + " " + words
+#                 num //= 1000
+#             return words.strip()
+#
+#     return number_to_words(number)
+#
+#
+# # Input from the user
+# num = int(input("Enter a number: "))
+# print("Word representation:", number_to_word(num))
 
+# Define empty list to store employee data
+# employee_data = []
+#
+# # Function to input hardcoded employee data
+# def input_employee_data():
+#     hardcoded_data = [
+#         {"Employee Number": "1", "Employee Name": "Jane Doe", "Department Number": "10", "Salary": "50000"},
+#         {"Employee Number": "2", "Employee Name": "Jane Doe", "Department Number": "10", "Salary": "60000"},
+#         {"Employee Number": "3", "Employee Name": "Jane Doe", "Department Number": "20", "Salary": "55000"},
+#         {"Employee Number": "4", "Employee Name": "Jane Doe", "Department Number": "20", "Salary": "52000"},
+#         {"Employee Number": "5", "Employee Name": "Jane Doe", "Department Number": "30", "Salary": "58000"},
+#         {"Employee Number": "6", "Employee Name": "Jane Doe", "Department Number": "30", "Salary": "62000"},
+#         {"Employee Number": "7", "Employee Name": "Jane Doe", "Department Number": "40", "Salary": "53000"},
+#         {"Employee Number": "8", "Employee Name": "Jane Doe", "Department Number": "40", "Salary": "54000"},
+#         {"Employee Number": "9", "Employee Name": "Jane Doe", "Department Number": "50", "Salary": "57000"},
+#         {"Employee Number": "10", "Employee Name": "Jane Doe", "Department Number": "50", "Salary": "59000"}
+#     ]
+#
+#     for data in hardcoded_data:
+#         employee_data.append(data)
+#
+# # Function to print employee data
+# def print_employee_data():
+#     for employee_info in employee_data:
+#         print("Employee Number:", employee_info["Employee Number"])
+#         print("Employee Name:", employee_info["Employee Name"])
+#         print("Department Number:", employee_info["Department Number"])
+#         print("Salary:", employee_info["Salary"])
+#         print()
+#
+# def findempbyempno():
+#     print("Find Employee By EmpNo Operation is going to be executed.")
+#     emp_no = input("Enter the Employee Number to search: ")
+#
+#     # Your existing code logic goes here
+#     # For example:
+#     for i in range(len(employee_numbers)):
+#         if emp_no == employee_numbers[i]:
+#             print("Employee found!")
+#             print("Employee Number:", employee_numbers[i])
+#             print("Department Number:", department_numbers[i])
+#             print("Salary:", salaries[i])
+#             break
+#     else:
+#         print("Employee not found.")
+#
+# def findempbydeptno():
+#     print("Find Employee By DeptNo Operation is going to be executed.")
+#     dept_no = input("Enter the Department Number to search: ")
+#
+#     # Your logic to find employee by department number goes here
+#
+# def findempbysalary():
+#     print("Find Employee By Salary Operation is going to be executed.")
+#     salary = input("Enter the Salary to search: ")
+#
+#     # Your logic to find employee by salary goes here
+#
+#
+# # Your existing code continues...
+# while True:
+#     print("\n"*4)
+#     print(f"\t\t\t\t MENU: Press 1, 2, 3, 4, 5 or 6")
+#     print(f"\t\t\t\t ================================")
+#     print(f"\t\t\t\t1. Find employee by empno.")
+#     print(f"\t\t\t\t2. Find employee by deptno")
+#     print(f"\t\t\t\t3. Find employee by salary.")
+#     print(f"\t\t\t\t4. Input employee data.")
+#     print(f"\t\t\t\t5. Print employee data.")
+#     print(f"\n\n\t\t\t\t6. Press 6 to quit.")
+#
+#     choice = int(input("Enter your choice of operation:"))
+#     if choice == 6:
+#         break
+#
+#     if choice == 1:
+#         findempbyempno()
+#     elif choice == 2:
+#         findempbydeptno()
+#     elif choice == 3:
+#         findempbysalary()
+#     elif choice == 4:
+#         input_employee_data()
+#     elif choice == 5:
+#         print_employee_data()
 
-main_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-odd_list, even_list = odd_even(main_list)
-print("Odd numbers:", odd_list)
-print("Even numbers:", even_list)
-
+# a = [[2, 5], [7, 3]]
+# b = [[9, -5], [3, 2]]
+#
+# def add_matrices(m1, m2):
+#     results = []
+#     for i in range(len(a)):
+#         result = []
+#         for j in range(len(a[0])):
+#             c = a[i][j] + b[i][j]
+#             result.append(c)
+#         results.append(result)
+#     return results
+#
+# test = add_matrices(a, b)
+# print(test)
 
