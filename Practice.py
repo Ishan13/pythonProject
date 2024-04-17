@@ -399,3 +399,25 @@
 # test = add_matrices(a, b)
 # print(test)
 
+# input_number = input("Enter a sequence of comma-separated numbers: ")
+#
+# numbers_list = []
+# for num_str in input_number.split(','):
+#     num = int(num_str.strip())
+#     numbers_list.append(num)
+#
+# numbers_tuple = tuple(numbers_list)
+#
+# print(f"List: {numbers_list}")
+# print(f"Tuple: {numbers_tuple}")
+
+# n = int(input("Enter a positive integer: "))
+# result_dict = {}
+#
+# i = 1
+# while i <= n:
+#     result_dict[i] = i * i
+#     i += 1
+#
+# print(result_dict)
+
