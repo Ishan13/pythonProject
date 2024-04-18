@@ -445,3 +445,28 @@
 #         print("You win!")
 #     else:
 #         print("Computer wins!")
+# def reverse_number(num):
+#     reversed_num = 0
+#     while num > 0:
+#
+#         last_digit = num % 10
+#
+#         reversed_num = (reversed_num * 10) + last_digit
+#
+#         num = num // 10
+#     return reversed_num
+#
+#
+# number = int(input("Enter a number to reverse: "))
+# reversed_number = reverse_number(number)
+# print("Reversed number:", reversed_number)
+
+decimal_num = int(input("Enter a decimal number: "))
+binary_num = ''
+
+while decimal_num > 0:
+    remainder = decimal_num % 2
+    binary_num = str(remainder) + binary_num
+    decimal_num //= 2
+
+print(f"The binary representation is: {binary_num}")
